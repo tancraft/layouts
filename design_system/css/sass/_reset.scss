@@ -1,0 +1,50 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  @include fs_calc($fs-300);
+  font-family: $font-fam;
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+canvas,
+svg {
+  max-width: 100%;
+  max-height: 100vh;
+  display: block;
+}
+
+a,
+a:visited {
+  color: hsl($color-dark);
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: inside;
+  list-style-type: none;
+}
+
+button,
+input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

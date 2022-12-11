@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;1,300;1,500&display=swap");
+.bc-dark, .dark-theme, body {
+  background-color: hsl(197deg, 82%, 12%);
+}
+
+.bc-white, .light-theme {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.bc-light {
+  background-color: hsl(78deg, 8%, 96%);
+}
+
+.bc-primary {
+  background-color: hsl(196deg, 40%, 58%);
+}
+
+.bc-titles {
+  background-color: hsl(197deg, 79%, 35%);
+}
+
+.bc-second {
+  background-color: hsl(120deg, 10%, 76%);
+}
+
+.text-dark, .card .color > h4, .light-theme p {
+  color: hsl(197deg, 82%, 12%);
+}
+
+.text-white {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.text-light, .card .color.bc-dark > h4, .card body.color > h4, .card .color.dark-theme > h4, .dark-theme p, body p {
+  color: hsl(78deg, 8%, 96%);
+}
+
+.text-primary {
+  color: hsl(196deg, 40%, 58%);
+}
+
+.text-titles, .light-theme h1,
+.light-theme h2,
+.light-theme h3,
+.light-theme h4,
+.light-theme h5 {
+  color: hsl(197deg, 79%, 35%);
+}
+
+.text-second, .dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme h5, body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
+  color: hsl(120deg, 10%, 76%);
+}
+
+.uppercase, h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+.letter-spacing {
+  letter-spacing: 0.1rem;
+}
+
+.d-flex, .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-i-block {
+  display: inline-block;
+}
+
+.flow {
+  margin-bottom: 0.75rem;
+}
+
+.max-flow {
+  margin-bottom: 2rem;
+}
+
+.center, .logo, section > div {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "Fira Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+canvas,
+svg {
+  max-width: 100%;
+  max-height: 100vh;
+  display: block;
+}
+
+a,
+a:visited {
+  color: hsl(197deg, 82%, 12%);
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: inside;
+  list-style-type: none;
+}
+
+button,
+input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+.title {
+  font-size: 3.5rem;
+  line-height: 5.25rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  font-weight: 300;
+  color: hsl(78deg, 8%, 96%);
+  margin-bottom: 0.75rem;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  padding: 30px 0;
+}
+header .title {
+  text-align: center;
+}
+
+section > div {
+  padding: 2rem 0;
+}
+section > div > h3 {
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+
+.cards {
+  justify-content: space-between;
+}
+
+.card {
+  padding: 1rem;
+  width: calc(33.3333333333% - 20px);
+}
+.card .color {
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  width: 100%;
+  min-height: 5rem;
+}
+.card .color > h4 {
+  margin: 0;
+}
+.logo {
+  max-width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    min-width: calc(100% - 10px);
+  }
+}/*# sourceMappingURL=style.css.map */

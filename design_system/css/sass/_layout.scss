@@ -1,0 +1,85 @@
+body {
+  @include theme_choice(true);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @extend .uppercase;
+  font-weight: 400;
+}
+
+.title {
+  @include fs_calc($fs-800);
+}
+p {
+  @include fs_calc($fs-300);
+  text-align: justify;
+  font-weight: 300;
+  color: hsl($color-light);
+  margin-bottom: $flow;
+}
+
+.light-theme {
+  @include theme_choice();
+}
+
+.dark-theme {
+  @include theme_choice(true);
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  padding: calc($gap * 3) 0;
+  .title {
+    text-align: center;
+  }
+}
+section {
+  & > div {
+    @extend .center;
+    padding: $max-flow 0;
+    & > h3 {
+      @include fs_calc($fs-700);
+    }
+  }
+}
+
+.cards {
+  @extend .d-flex;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 1rem;
+  width: calc(100% / 3 - ($gap * 2));
+  & .color {
+    padding: 1rem;
+    margin-bottom: $flow;
+    width: 100%;
+    min-height: 5rem;
+    & > h4 {
+      @extend .text-dark;
+      margin: 0;
+    }
+    &.bc-dark > h4 {
+      @extend .text-light;
+    }
+  }
+}
+
+.logo {
+  @extend .center;
+  max-width: 50%;
+}
+
+@media screen and(max-width: 600px) {
+  .card {
+    min-width: calc(100% - $gap);
+  }
+}

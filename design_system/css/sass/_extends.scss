@@ -1,0 +1,86 @@
+.bc-dark {
+  background-color: hsl($color-dark);
+}
+
+.bc-white {
+  background-color: hsl($color-white);
+}
+
+.bc-light {
+  background-color: hsl($color-light);
+}
+
+.bc-primary {
+  background-color: hsl($color-primary);
+}
+
+.bc-titles {
+  background-color: hsl($color-titles);
+}
+
+.bc-second {
+  background-color: hsl($color-second);
+}
+
+.text-dark {
+  color: hsl($color-dark);
+}
+
+.text-white {
+  color: hsl($color-white);
+}
+.text-light {
+  color: hsl($color-light);
+}
+
+.text-primary {
+  color: hsl($color-primary);
+}
+
+.text-titles {
+  color: hsl($color-titles);
+}
+
+.text-second {
+  color: hsl($color-second);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spacing {
+  letter-spacing: 0.1rem;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-i-block {
+  display: inline-block;
+}
+
+.flow {
+  margin-bottom: $flow;
+}
+
+.max-flow {
+  $flow: 2rem;
+  margin-bottom: $flow;
+}
+
+.center {
+  max-width: 80%;
+  margin: 0 auto;
+}

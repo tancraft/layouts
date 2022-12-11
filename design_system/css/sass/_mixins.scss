@@ -1,0 +1,32 @@
+@mixin fs_calc($fs) {
+  font-size: $fs;
+  line-height: calc($fs * 1.5);
+}
+
+@mixin theme_choice($dark: false) {
+  @if $dark {
+    @extend .bc-dark;
+    p {
+      @extend .text-light;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      @extend .text-second;
+    }
+  } @else {
+    @extend .bc-white;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      @extend .text-titles;
+    }
+    p {
+      @extend .text-dark;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,300;0,400;0,600;1,300;1,500&display=swap');
+
+$font-fam: 'Fira Sans', sans-serif;
+
+$line-height-custom: 2.5rem;
+
+$fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
+$fs-800: 3.5rem;
+$fs-700: 1.5rem;
+$fs-600: 1rem;
+$fs-500: 1.75rem;
+$fs-400: 0.9375rem;
+$fs-300: 1rem;
+$fs-200: 0.875rem;
+
+$flow: 0.75rem;
+$max-flow: 2rem;
+$gap: 10px;
+
+$color-dark: 197 82% 12%;
+$color-light: 78 8% 96%;
+$color-white: 0 0% 100%;
+$color-primary: 196 40% 58%;
+$color-second: 120 10% 76%;
+$color-titles: 197 79% 35%;
